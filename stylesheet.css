@@ -51,19 +51,29 @@ Black: #000000 (Black)
 *{margin: 0;
 padding: 0%;}
 
-boby { 
+body { 
        font-family:"Caveat",Syne momo; 
-
+       display: inline;
        
-      } 
+    } 
 
-h1,h2,h3,h4 { 
+h1,h2,h3 { 
               font-family:"Poppins",cursive;
-              font-weight: 450;
+              font-weight: 450px;
               line-height:1,6 ;
               font-size: 60px;
               letter-spacing:-1px;
               color:#000000 ;
+
+             
+            }
+            h4 {
+              margin:  50px;
+              font-family:"Caveat",Syne momo; 
+              font-weight: 100px;
+               font-size: 60px;
+               align-items: center;
+               text-align:center;
             }
             
 a , ul {
@@ -97,7 +107,7 @@ a , ul {
        height: 40px;;
        font-size:25px;
        padding:12px;
-       
+       justify-content: center;
        border-radius:10%;
        margin-bottom:100px;
        text-align: center;
@@ -108,6 +118,7 @@ a , ul {
         background-color:#fa879a;
         text-align:center; 
         color:#f4f1ed;
+        justify-content:center
          }
   
  .btn-primary:hover {
@@ -115,6 +126,7 @@ a , ul {
         background-color:#f8cbd2;
        justify-content:center;
        text-align:center;
+       margin: 10px;
               
        
        }
@@ -122,7 +134,7 @@ a , ul {
         
         
  .btn-secondary{
-       background: #FF64B4;
+       background:#f8cbd2;
        justify-content:center;
        text-align:center;
        margin-top: 95px;
@@ -140,6 +152,11 @@ a , ul {
           height: 50px;
           
   }
+
+  footer {  justify-content:center;
+            text-align:center;  
+            align-items: center; 
+         margin: 50px;    }
 
 /*------------------------------------sections-----------------------------------------------------------*/
   
@@ -177,13 +194,20 @@ nav {
                 border-radius:50%; 
 }
 
-.layout { display:flex;
+.layout {     display:flex;
+
              flex-direction:column;  
              justify-content:center;
-             
-              width: 250px; 
+             width: 250px; 
              padding: 50px;
-             background-color:#f8cbd2 ;}
+             background-color:#f8cbd2 ;
+       box-shadow: 0 0.4px 8px #000000;
+        object-fit: cover; transition: transform 0.3s;
+}
+
+       .layout:hover { transform: scale(1.1) rotate(3deg);
+                        z-index: 10;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
 .chasephrase { font-size:15px;
               font-family:"Caveat",cursive;} 
@@ -196,7 +220,7 @@ nav {
 
 .heading {
         text-align: center;}    
-        main   {
+        header {
 
 margin-top: 80px;
 margin-left: 50px;
@@ -206,30 +230,33 @@ margin-left: 50px;
 .main {
            display:flex;
            flex-direction:row;
-           padding:25px 25px; 
            gap:50px;
            max-width:100%;
+           align-items: center;
            text-align: center;
-           justify-content:left; 
+           justify-content:center; 
+           padding:25px 40px;
+           margin-top: 10px;
+           margin-bottom: 100px;
+           
 
-            
-           
-           
-           
-       }   
+             }   
        
        .buttons { 
               justify-content:center;
               align-items:center;
               padding-left: 25px;
-              padding-left: 25px;
-              max-width:100%;
-              margin:0 auto; 
+              padding-right: 25px;
+              width:100%;
+              margin:200px ;
+              
+              
               }
               .rose {
                      width: 100%;
                      height: 100%;
               }
+              main { margin: 100px;}
           
        
 /*------------------------------------footer-----------------------------------------------------------*/
@@ -251,3 +278,50 @@ margin-left: 50px;
 
 
 }
+
+.feathers-container {
+       display: flex;
+       direction:row ;
+       justify-content: center;
+       gap: 20px;
+       text-align: center;
+
+}
+
+.feathers-image { 
+       width: 300px;
+       height:200px;
+       object-fit: cover; transition: transform 0.3s;
+       border-radius: 5px;
+       border: 2px solid #fcfbf9;
+       cursor: pointer;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+
+}
+
+.feathers-image:hover { transform: scale(1.1) rotate(3deg);
+                        z-index: 10;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.resize-image { font-size:32px;}
+
+#keensites-icon {  text-align: center;
+                   font-size:50px;
+                    }
+           .gold-card { background:#9775fa;
+                         justify-content: center;
+                         width: 100%;
+                         max-width: 1000px;
+                         padding: 50px 50px 50px 50px  ;
+                         margin: 200px;
+                         align-items:center;
+                         text-align:center ;
+                         border-radius:20px ;
+                         
+
+              }
+
+footer { width: 100%;}
+
