@@ -1,0 +1,32 @@
+html { font-size:62.5%;}
+
+@media (max-width:1600px) {
+
+    html { font-size:62.5%;}
+    
+}
+
+@media (max-width:1300px) {
+
+    html {font-size:1100px;}
+    
+}
+
+@media (max-width:800px) {
+
+    html { font-size:62.5%;}
+   
+}
+@media (max-width:600px) {
+
+    html { font-size:62.5%;}
+    .feathers-container {
+       display: flex;
+       direction: column;
+       justify-content: center;
+       gap: 20px;
+       text-align: center;
+
+}
+    
+}
