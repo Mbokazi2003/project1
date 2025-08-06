@@ -55,11 +55,11 @@ padding: 0%;
 
  html { font-size: 62.5%;}
 
-.body-container {  max-width: 1200px;
+body {  max-width: 1200px;
                    width: 80%;
                    height:auto;
-                   margin-right: auto;
-                   margin-left: auto;
+                   margin-right:3rem;
+                   margin-left: 3rem;
                    display: flex; 
                    flex-direction: column;
                    gap:50px;
@@ -71,7 +71,7 @@ padding: 0%;
 body { 
        font-family:"Caveat",Syne momo; 
        display:block;
-       width: 100%;
+       width: 80%;
 
 
        
