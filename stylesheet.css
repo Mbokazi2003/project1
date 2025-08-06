@@ -55,7 +55,7 @@ padding: 0%;
 
  html { font-size: 62.5%;}
 
-body {  max-width: 1200px;
+body {             max-width: 1200px;
                    width: 80%;
                    height:auto;
                    margin-right:3rem;
@@ -65,17 +65,11 @@ body {  max-width: 1200px;
                    gap:50px;
                    justify-items: center;
                    align-items: center;
+                    font-family:"Caveat",Syne momo;
                    
               }
 
-body { 
-       font-family:"Caveat",Syne momo; 
-       display:block;
-       width: 80%;
 
-
-       
-    } 
    
 
 h1,h2,h3 { 
@@ -249,7 +243,7 @@ nav {
            display:flex;
            flex-direction:row;
            gap:50px;
-           width:100%;
+           width:80%;
            align-items: center;
            text-align: center;
            justify-content:center; 
@@ -272,7 +266,7 @@ nav {
               max-width:1200px;
               height: 500px;
               padding: 5rem  ;
-              border: radius 10%;;}
+              border: radius 10%;}
               .rose {
                      width: 80px;
               
