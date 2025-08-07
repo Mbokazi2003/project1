@@ -1,32 +1,34 @@
-html { font-size:62.5%;}
 
-@media (max-width:1600px) {
 
-    html { font-size: ;}
-    
-}
+/* XS - PHONE PORTRAINT:  < 576px */
 
-@media (max-width:1300px) {
+@media (max-width: 34rem) {
+    /* 530px / 16px = 34rem */
+    /* 34rem x 16px = 544px */
 
-    html {font-size:1100px;}
-    
-}
+    html {
+        font-size: 37.5%;
+        /* 6px / 16px = 37.5% */
+    }
 
-@media (max-width:800px) {
+    .hero-heading-break {
+        display: none;
+    }
 
-    html { font-size:62.5%;}
-   
-}
-@media (max-width:600px) {
+    .hero-section {
+        height: auto;
+    }
 
-    html { font-size:62.5%;}
-    .feathers-container {
-       display: flex;
-       direction: column;
-       justify-content: center;
-       gap: 20px;
-       text-align: center;
+    .features-grid-container {
+        grid-template-columns: 1fr;
+    }
 
-}
-    
+    .feature-img-swap-order {
+        grid-row: auto;
+        grid-column: auto; 
+    }
+
+    .cta-card {
+        padding: 8rem 6rem;
+    }
 }

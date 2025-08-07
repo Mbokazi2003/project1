@@ -48,107 +48,98 @@ Black: #000000 (Black)
 5px / 10px / 15px / 20px / 25px / 30px / 40px / 50px / 60px / 70px / 80px / 90px / 100px / 125px / 150px / 200px / 250px / 300px / 400px / 500px
 
 */
-*{margin: 0;
-padding: 0%;
-margin: 0%;
-
+*{
+   box-sizing: border-box;    
+   margin: 0;
+   padding: 0%;
 }
 
  html { font-size: 62.5%;}
 
-body {             max-width: 1200px;
-                   width: 80%;
-                   height:auto;
-                   margin-right:3rem;
-                   margin-left: 3rem;
-                   display: flex; 
-                   flex-direction: column;
-                   gap:50px;
-                   justify-items: center;
-                   align-items: center;
-                    font-family:"Caveat",Syne momo;
-                   
-              }
+body {    font-family:"Caveat",Syne momo;
+          font-weight:40rem;        
+           line-height:1.5; 
+           color: #212529;
+           }
+
+  .body-container { max-width: 1200px;
+                  width: 80%; 
+                  margin: 0 auto; }         
 
 
-   
-
-h1,h2,h3 { 
+h1,h2,h3 h4{ 
               font-family:"Poppins",cursive;
-              font-weight:40rem;
-              line-height:1,6;
-              font-size: 6rem;
+              font-weight:70rem;
+              line-height:1,5;
               letter-spacing:-1px;
-              color:#000000;
+           }
 
-             
-            }
-            h4 {
-              font-family:"Caveat",Syne momo; 
-              font-weight: 10rem;
-               font-size: 6rem;
-               text-align:center;
-               font-family:"Poppins",cursive;
-               
-            }
-            
-a , ul {
-        text-decoration:none ;
-        list-style:none; 
-        font-weight: 20rem;
-        align-items:center;
-        font-size:3.2rem ;
-        font-family:"Poppins",cursive;
-        margin: 1rem;
-}
-    
- p { color: #D4AF37;
-     word-spacing:-1px;
-     line-height:2,0;
-     font-size:2rem;
-}
+         h1 {font: size 6.2rem; ;}
+         h2 {font: size 4.2rem; ;}
+         h3 {font-size: 4rem;}
+         h4 {font-size:3.2rem;}
+         h5 {font-size:2.4rem ;}
+
+     p {font: size 2rem;}
+
+     a { text-decoration:none ;
+          font-size:1.6rem ; 
+         display: inline-table;}
+       
+     a link,a :visited,a:active {
+              color: #212529;}
+
+     ul { list-style: none;}
+
+     span { display: inline-block; }
 
     
 /*------------------------------------Components-----------------------------------------------------------*/
+
+
 .btn { 
-       
-       width:85px;;
-       height:40px;
-       font-weight:20rem;
-       font-family: "Poppins",cursive;;
-       line-height:15px;
-       font-size: 2rem;
-       padding:1.2rem;
+       text-decoration: none;
+       font-size:3.2rem ;
+       padding:1.5rem 3rem;
        border-radius:10%;
-       margin-bottom:10rem;
-       margin-top: 10rem;
-       margin:2rem;
-       border: rgb(255, 255, 255) solid 1px;
-       transition: transform 0.3s;
-       
-}
+
+       }
        
        
-.btn-primary{ 
-        background-color:#fa879a;
-        color:#f4f1ed;
-         }
-  
- .btn-primary:hover {     
-        background-color:#f8cbd2;
+.btn-primary:link, .btn-primary:visited{ 
+       color:#f4f1ed;
+       background-color:#fa879a;
+       border: #ffffff solid 1px;
+       transition: 0.5s;
+        }
+
+.btn-primary:hover,.btn-primary:active{  
+        color: #fa879a;
+        background-color:#fcfbf9;
+        border: #ffffff solid 1px;
+       transform: scale(1.05, 1.05);
+       box-shadow: 0px 3px 6px #212529;
        }
         
         
         
- .btn-secondary{
-       background:#f8cbd2;
-        color:#fcfbf9;
-         }
+ .btn-secondary:link, .btn-secondary:visited{
+       background-color:#f4f1ed;
+        color:#fa879a;
+        border: #ffffff solid 1px;
+       transition: 0.5s;
+       }
 
-  .btn-secondary:hover{ 	
+  .btn-secondary:hover, .btn-secondary:active{ 	
          background-color: #fa879a;
+         color: #fcfbf9;
+         border: #ffffff solid 1px;
+         transform: scale(1.05, 1.05);
+         box-shadow: 0px 3px 6px #212529;
          
          }
+     .decoration-unit1 { color:  #D4AF37 ;}  
+.decoration-unit2 { color:#9775fa ;}      
          
   
 
@@ -158,6 +149,8 @@ a , ul {
              text-align:center;  
              align-items: center; 
              margin: 5rem;    }
+
+           
 
 /*------------------------------------sections-----------------------------------------------------------*/
 
@@ -173,7 +166,7 @@ nav {
        top: 0%;
        left: 0%;
        width:99%;
-       height: 80px;
+       height: 9rem;
        background: #333;
        color: #f8cbd2;
        padding:0rem;
@@ -191,47 +184,53 @@ nav {
     .nav-btn-container { 
        display: flex;
        direction: row;
-       gap: 15px;
+       gap: 1.5rem;
     }
 /*------------------------------------main-----------------------------------------------------------*/
-
-.wordA { color:  #D4AF37 ;}  
-.wordB { color:#9775fa ;}
-
 .hacker-image {
-
-               width: 200px;
-               height: 400px;
-                border-radius:50%; 
+               max-width: 300px;
+               width: 100%;
+               border-radius:50%; 
 }
 
-.layout {     display:flex;
+.main {
            
+    height: 100vh - 9rem ;
+    min-height: 400px;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+   }   
+
+
+.layout {    display:flex;
              flex-direction:column;  
              justify-content:center;
-             width: 250px; 
              padding: 5rem;
              background-color:#f8cbd2 ;
              box-shadow: 0 0.4px 8px #000000;
              object-fit: cover; transition: transform 0.3s;
-}
+       }
 
        .layout:hover { transform: scale(1.1) rotate(3deg);
                         z-index: 10;
                         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                     position: relative; }
+                        position: relative; }
 
-.chasephrase { font-size:15px;
-              font-family:"Caveat",cursive;} 
+.chasephrase { font-size:1.5rem;
+               font-family:"Caveat",cursive;} 
               
               
-
-.aboutsection { 
+ .aboutsection { 
          width:200px;
           }
 
 .heading {
-        text-align: center;}    
+        text-align: center;
+       margin-top:10rem ; }    
         header {  
                   margin-top: 3rem;
                   width:100%;
@@ -240,18 +239,7 @@ nav {
                   margin-left: auto;
   }  
 
-.main {
-           display:flex;
-           flex-direction:row;
-           gap:50px;
-           width:80%;
-           align-items: center;
-           text-align: center;
-           justify-content:center; 
-           margin-right: auto;
-           margin-left: auto;
-           
-             }   
+
        
        .buttons { 
                background:#9775fa;
