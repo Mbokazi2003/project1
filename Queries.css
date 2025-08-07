@@ -39,13 +39,14 @@
 .buttons { 
                
               display: grid;
-              grid-template-columns:1fr 1fr 1fr  ;     }
+              grid-template-columns:1fr 1fr ; 
+            justify-items: center; }
 
 }
 
 /* SM - PHONE LANDSCAPE: 576px - 768px */
 
-@media (max-width: 43rem) {
+@media (max-width: 49rem) {
     /* 680px / 16px = 43rem */
     /* 43rem x 16px = 688px */
 
@@ -53,19 +54,12 @@
         font-size: 43.75%;
         /* 7px / 16px = 43.75% */
     }
-
-    .cta-card {
-        padding: 8rem 16rem;
-    }
-
-    .features-section {
-        margin-bottom: 20rem;
-    }
-
-    .features-grid-container {
-        row-gap: 5rem;
-        column-gap: 0.5rem;
-    }
+.main {        
+    height:auto; 
+    display: flex;
+    flex-direction: column;
+   }
+    
 }
 
 /* XS - PHONE PORTRAINT:  < 576px */
