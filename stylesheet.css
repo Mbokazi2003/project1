@@ -76,13 +76,13 @@ h1,h2,h3 h4{
               letter-spacing:-1px;
            }
 
-         h1 {font: size 6.2rem; ;}
-         h2 {font: size 4.2rem; ;}
+         h1 {font-size:6.2rem; }
+         h2 {font-size:4.2rem; }
          h3 {font-size: 4rem;}
          h4 {font-size:3.2rem;}
          h5 {font-size:2.4rem ;}
 
-     p {font: size 2rem;}
+     p {font-size:2rem;}
 
      a { text-decoration:none ;
           font-size:1.6rem ; 
@@ -150,7 +150,7 @@ h1,h2,h3 h4{
              justify-content:center;
              text-align:center;  
              align-items: center; 
-             margin: 5rem;    }
+             margin: 5rem;}
 
            
 
@@ -227,19 +227,13 @@ nav {
               
               
  .aboutsection { 
-         width:200px;
-          }
+               width:200px;
+              }
 
 .heading {
         text-align: center;
-       margin-top:10rem ; }    
-        header {  
-                  margin-top: 3rem;
-                  width:100%;
-                  height:80vh;
-                  margin-right: auto;
-                  margin-left: auto;
-  }  
+        margin-top:10rem ; }    
+        
 
 
        
@@ -249,7 +243,6 @@ nav {
               direction: row;
               padding-left: 2.5rem;
               padding-right: 2.5rem;
-              width:100px;
               margin:auto ;
               align-items: center;
               justify-content: center;
@@ -257,7 +250,9 @@ nav {
               max-width:1200px;
               height: 500px;
               padding: 5rem  ;
-              border: radius 10%;}
+              border: radius 10%;
+        gap: 5px;
+             box-shadow: 0 4px 8px #333;        }
               .rose {
                      width: 80px;
               
@@ -342,20 +337,12 @@ nav {
 }
 
 .resize-image { font-size:32px;
-                 width: 300px;}
+                 width: 300px;
+              text-align: center;}
 
 #keensites-icon {  text-align: center;
                    font-size:5rem;
                     }
-           /*.gold-card {  background:#9775fa;
-                         width:100%;
-                         max-width:1200px;
-                         height: 500px;
-                         padding: 50px 50px 50px 50px  ;
-                         margin:200px; 
-                         border-radius:20px ;
-                         align-items: center;
-              } */
               .footer-links-container { display: flex;
                                        flex-direction: row;
                                        gap:5px ;
@@ -374,7 +361,7 @@ nav {
              margin: 2rem;
              justify-content: center;
              background-color: aliceblue;
-       border: #fa879a solid 4px;}
+             border: #fa879a solid 4px;}
 
 
 .body-lastpage { background-color: #f4f1ed;}
@@ -384,5 +371,7 @@ nav {
 margin-bottom: 8rem;
 
 }
+
+.center-class { text-align:center}
 
 
