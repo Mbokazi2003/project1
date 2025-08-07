@@ -56,7 +56,8 @@ Black: #000000 (Black)
 
  html { font-size: 62.5%;}
 
-body {    font-family:"Caveat",Syne momo;
+body {  font-family: "Playfair Display", serif;
+        
           font-weight:40rem;        
            line-height:1.5; 
            color: #212529;
@@ -70,7 +71,7 @@ body {    font-family:"Caveat",Syne momo;
 
 
 h1,h2,h3 h4{ 
-              font-family:"Poppins",cursive;
+              
               font-weight:70rem;
               line-height:1,5;
               letter-spacing:-1px;
@@ -140,8 +141,10 @@ h1,h2,h3 h4{
          box-shadow: 0px 3px 6px #212529;
          
          }
-     .decoration-unit1 { color:  #D4AF37 ;}  
-.decoration-unit2 { color:#9775fa ;}      
+     .decoration-unit1 { color:  #D4AF37 ;
+                        font-family:"Caveat", cursive;}  
+.decoration-unit2 { color:#9775fa
+                    font-family:"Caveat", cursive;}      
          
   
 
@@ -211,6 +214,7 @@ nav {
 .layout {    display:flex;
              flex-direction:column;  
              justify-content:center;
+             align-items: center;
              padding: 5rem;
              background-color:#f8cbd2 ;
              box-shadow: 0 0.4px 8px #000000;
@@ -223,7 +227,9 @@ nav {
                         position: relative; }
 
 .chasephrase { font-size:1.5rem;
-               font-family:"Caveat",cursive;} 
+               font-family:"Caveat",cursive;
+               
+              } 
               
               
  .aboutsection { 
@@ -262,23 +268,17 @@ nav {
               }
               .project-container {  
                                 display:flex;
-           flex-direction:row;
-           gap:50px;
-           width:1000px;
-           height: auto;
-           align-items: center;
-           text-align: center;
-           justify-content:center; 
-           padding:2.5rem ;
-           margin-top: 1rem;
-           margin-bottom: 10rem;
-           margin-top: 10rem;
-           margin-right: auto;
-           margin-left: auto;
-           border: #fa879a solid 2px;
-           background-color: #f4f1ed;
-           box-shadow: 0 0.4px 8px #000000;
-           object-fit: cover; transition: transform 0.3s;
+                               flex-direction:row;
+                                gap:50px;
+                                align-items: center;
+                                justify-content:center; 
+                                padding:2.5rem ;
+                                margin-bottom: 10rem;
+                                margin-top: 10rem;
+                                border: #fa879a solid 2px;
+                               background-color: #f4f1ed;
+                               box-shadow: 0 0.4px 8px #000000;
+                               object-fit: cover; transition: transform 0.3s;
              }
 
              .project-container:hover {
@@ -342,6 +342,7 @@ nav {
 
 #keensites-icon {  text-align: center;
                    font-size:5rem;
+                   font-family:"Caveat", cursive;
                     }
               .footer-links-container { display: flex;
                                        flex-direction: row;
@@ -360,8 +361,8 @@ nav {
              align-items: center;
              margin: 2rem;
              justify-content: center;
-             background-color: aliceblue;
-             border: #fa879a solid 4px;}
+             background-color:#333 ;
+       }
 
 
 .body-lastpage { background-color: #f4f1ed;}
