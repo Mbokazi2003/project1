@@ -57,21 +57,16 @@ Black: #000000 (Black)
  html { font-size: 62.5%;}
 
 body {  font-family: "Playfair Display", serif;
-        
-          font-weight:40rem;        
-           line-height:1.5; 
-           color: #212529;
+        font-weight:400;        
+        line-height:1.5; 
+        color: #212529;
             ;
+        background-color: #faf9fd;
            }
-
-  .body-container { max-width: 1200px;
-                  width: 80%; 
-                  margin: 0 auto;
-              overflow-x: hidden; }         
+        
 
 
 h1,h2,h3 h4{ 
-              
               font-weight:70rem;
               line-height:1,5;
               letter-spacing:-1px;
@@ -102,7 +97,7 @@ h1,h2,h3 h4{
 
 .btn { 
        text-decoration: none;
-       font-size:3.2rem ;
+       font-size:3rem ;
        padding:1.5rem 3rem;
        border-radius:10%;
 
@@ -110,16 +105,16 @@ h1,h2,h3 h4{
        
        
 .btn-primary:link, .btn-primary:visited{ 
-       color:#f4f1ed;
+       color:#faf9fd;
        background-color:#fa879a;
-       border: #ffffff solid 1px;
+       border:#faf9fd  solid 1px;
        transition: 0.5s;
         }
 
 .btn-primary:hover,.btn-primary:active{  
-        color: #fa879a;
-        background-color:#fcfbf9;
-        border: #ffffff solid 1px;
+        color: #9775fa;
+        background-color:#faf9fd;
+        border: #faf9fd solid 1px;
        transform: scale(1.05, 1.05);
        box-shadow: 0px 3px 6px #212529;
        }
@@ -127,24 +122,26 @@ h1,h2,h3 h4{
         
         
  .btn-secondary:link, .btn-secondary:visited{
-       background-color:#f4f1ed;
+       background-color:#faf9fd;
         color:#fa879a;
-        border: #ffffff solid 1px;
+        border: #faf9fd solid 1px;
        transition: 0.5s;
        }
 
   .btn-secondary:hover, .btn-secondary:active{ 	
-         background-color: #fa879a;
-         color: #fcfbf9;
-         border: #ffffff solid 1px;
+         background-color:#9775fa ;
+         color:#faf9fd ;
+         border: #faf9fd solid 1px;
          transform: scale(1.05, 1.05);
          box-shadow: 0px 3px 6px #212529;
          
          }
-     .decoration-unit1 { color:  #D4AF37 ;
+     .decoration-unit1 { color: #9775fa  ;
                         font-family:"Caveat", cursive;}  
-.decoration-unit2 { color:#9775fa
-                    font-family:"Caveat", cursive;}      
+      .decoration-unit2 { color:#fcd707;
+                    font-family:"Caveat", cursive;}  
+      .decoration-unit3 { color:#836f01 ;
+                    font-family:"Caveat", cursive;}                   
          
   
 
@@ -153,7 +150,7 @@ h1,h2,h3 h4{
              justify-content:center;
              text-align:center;  
              align-items: center; 
-             margin: 5rem;}
+             }
 
            
 
@@ -244,7 +241,7 @@ nav {
 
        
        .buttons { 
-               background:#9775fa;
+              background-color:#f8cbd2;
               display: flex;
               direction: row;
               padding-left: 2.5rem;
@@ -252,19 +249,19 @@ nav {
               margin:auto ;
               align-items: center;
               justify-content: center;
-              width:100%;
+              width:60%;
               max-width:1200px;
               height: 500px;
               padding: 5rem  ;
               border: radius 10%;
-        gap: 5px;
-             box-shadow: 0 4px 8px #333;        }
+              gap: 5px;
+              box-shadow: 0 4px 8px #333;        }
               .rose {
                      width: 80px;
               
               }
               main { 
-                     margin-bottom: 20rem;
+                     margin-bottom: 25rem;
               }
               .project-container {  
                                 display:flex;
@@ -315,7 +312,6 @@ nav {
        justify-content: center;
        gap: 20px;
        text-align: center;
-
 }
 
 .feathers-image { 
@@ -350,7 +346,7 @@ nav {
                                    
                                    }
 
-                                   .image-reresize { width: 600px;
+                                   .image-reresize { width: 500px;
                                        height: auto;}
 
 
@@ -375,4 +371,17 @@ margin-bottom: 8rem;
 
 .center-class { text-align:center}
 
+#warning { 
+       font-size: 3rem;
+       color: #b40303;
+       background-color: black;
+         align-items: center;   
+       top: 100%;
+       left: 0%;
+       width:99%;
+       height: 9rem;
+       background: #636262;
+       padding:0rem;
+       z-index: 200px;
+        }
 
